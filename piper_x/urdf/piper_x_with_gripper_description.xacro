@@ -27,6 +27,15 @@
         <parent link="link6"/>
         <child link="gripper_base"/>
     </joint>
+
+    <!-- Fixed TCP frame used as the grasp reference point. -->
+    
+    <link name="gripper_tcp"/>
+    <joint name="gripper_tcp_joint" type="fixed">
+        <origin xyz="0 0 0.1058" rpy="0 0 0"/>
+        <parent link="gripper_base"/>
+        <child link="gripper_tcp"/>
+    </joint>
     <link name="gripper_link1">
         <inertial>
             <origin xyz="0.00065123185041968 -0.0491929869131989 0.00972258769184025" rpy="0 0 0"/>
