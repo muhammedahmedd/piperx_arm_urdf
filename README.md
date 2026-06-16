@@ -2,7 +2,7 @@
 
 This repository is a modified fork of the AgileX `agx_arm_urdf` package.
 
-This branch keeps only the Piper X URDF assets needed for this project and adds a fixed `gripper_tcp` frame for MoveIt end-effector control.
+This branch keeps only the Piper X URDF assets needed for this project and adds a fixed `gripper_tcp` frame for MoveIt end-effector control. The gripper_tcp frame is 10.58 cm above the gripper_base frame along the local z-axis.
 
 ![Piper X gripper TCP frame](images/piperx_gripper_tcp.png)
 
